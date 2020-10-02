@@ -18,7 +18,7 @@ def is_prime(t):
 
 def list_of_primes(end, start=2):
     """Returns a list of primes till end integer,
-with a start value"""
+"""
     answer = [i for i in range(start, end + 1) if is_prime(i)]
     return answer
 
@@ -33,8 +33,8 @@ def powerset(se):
     return ans
 
 
-o = int(input())
-queries = list(map(int, input().split()))[:o]
+m = int(input())
+queries = list(map(int, input().split()))[:m]
 for n in queries:
     count = 0
     poweset_of_primes_till_n = powerset(list_of_primes(n))
