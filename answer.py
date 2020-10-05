@@ -8,7 +8,7 @@ def is_prime(t):
             if t % m == 0:
                 return False
         return True
-
+    
 
 def hcf(x, y):
     while y:
